@@ -92,7 +92,5 @@ body::-webkit-scrollbar-thumb{
 }
 
 .tarjeta{
-    display: flex;
-    
-    
+    display: flex;    
 }
