@@ -17,6 +17,9 @@
     --transition-speed: 600ms;
 }
 
+
+
+
 .negro{background-color: var(--negro);}
 .grisOscuro{background-color: var(--grisOscuro);}
 .grisClaro{ background-color: var(--grisClaro);}
@@ -41,14 +44,6 @@ body {
     padding: 0;
 }
 
-.logo{
-    padding: 0px 30px;
-}
-.title{
-    padding: 15px 50px;
-    color: var(--verde);
-}
-
 nav{
     display: flex;
     flex-direction: row;
@@ -58,4 +53,19 @@ nav a{
     color: var(--verde);
     padding: 14px 20px;
     text-decoration: none;
+}
+
+.logo{
+    padding: 0px 30px;
+}
+.title{
+    padding: 15px 50px;
+    color: var(--verde);
+}
+
+.general{
+    background-color: var(--negro);
+}
+.card-color{
+    background-color: var(--grisClaro);
 }

@@ -1,7 +1,7 @@
 
 <div class="column">
-    <div class="card grisClaro bordeVerde">
-        <div class="start2p card-header">
+    <div class="card card-color">
+        <div class="card-header">
             <p class="card-header-title is-centered">
             {{ .Title }}
             </p>
@@ -10,7 +10,7 @@
             
             <div class="">
                         
-                <div class="content formatoTexto">
+                <div class="content">
                    
                         {{ .Summary }}
                    
@@ -21,7 +21,7 @@
             <a href="{{ .Permalink }}">Continuar</a>
         </div>
         <div class="card-footer">
-            <small class="card-footer-itme centrar">{{ dateFormat "January 2 - 2006" .Date }}</small>
+            <small class="card-footer-itme">{{ dateFormat "January 2 - 2006" .Date }}</small>
         </div>
     </div>
 </div>

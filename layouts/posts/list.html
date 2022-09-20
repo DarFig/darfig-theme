@@ -1,14 +1,14 @@
 {{ define "main" }}
 
-<div role="main" class="sourceCode section">
+<div role="main" class="section">
     <div class=" columns ">
         <div class="column is-2">
             
         </div>
         <div class="column is-8">
-            <div class="negro bordeVerde">
-                <div class=" column textoCentrado">
-                    <h3 class="textoVerde start2p title is-4">Entradas</h3>
+            <div class="">
+                <div class="column ">
+                    <h3 class="title is-4">Posts</h3>
                 </div>
             </div>
             
@@ -16,18 +16,18 @@
                 {{ partial "postPreview.html" . }}
             {{end}}
 
-            <div class="pagination negro start2p textoVerde bordeVerde"  role="navigation">
+            <div class="pagination"  role="navigation">
                 <div class="column is-4">
                 {{ if .Paginator.HasPrev }}
-                    <a href="{{ .Paginator.Prev.URL }}" class="pagination-previous textoVerde bordeVerde">&#11013;</a>
+                    <a href="{{ .Paginator.Prev.URL }}" class="pagination-previous">&#11013;</a>
                 {{ end }}
                 </div>
                 <div class="column is-4">
-                <span class="pagination-ellipsis textoVerde">{{ .Paginator.PageNumber }}</span>
+                <span class="pagination-ellipsis">{{ .Paginator.PageNumber }}</span>
                 </div>
                 <div class="column is-4">
                 {{ if .Paginator.HasNext }}
-                    <a href="{{ .Paginator.Next.URL }}" class="pagination-next textoVerde bordeVerde">&#10145;</a>
+                    <a href="{{ .Paginator.Next.URL }}" class="pagination-next">&#10145;</a>
                 {{ end }}
             </div>
                 

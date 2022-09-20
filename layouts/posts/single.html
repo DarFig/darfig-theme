@@ -1,28 +1,27 @@
 {{ define "main" }}
 
-<div  role="main" class="sourceCode section" >
+<div  role="main" class="section" >
     <div class="columns">
         <div class="column is-2">
             
         </div>
 
         <div class="column is-8">
-            <div class="negro bordeVerde">
-                <div class="column textoCentrado">
-                    <h3 class="textoVerde start2p title is-4">Post</h3>
+            <div class="">
+                <div class="column">
+                    <h3 class="title is-4">Post</h3>
                 </div>
             </div>
             <div class="column"></div>
-            <div class="column card grisClaro bordeVerde">
-                <div class="start2p card-header">
+            <div class="card-color column card">
+                <div class="card-header">
                     <div class="card-header-title is-centered">
                     {{ .Title }}
                     </div>
                 </div>
                 <div class="card-content"></div>
-                <div class="start2p card-header">
-                    <div class="content" style="font-size: 70%;
-                        color: #92d192;">
+                <div class="card-header">
+                    <div class="content">
                         {{ .TableOfContents }}
                     </div>
                 </div>
@@ -30,7 +29,7 @@
                     
                     <div class="">
                         
-                        <div class="content formatoTexto">
+                        <div class="content">
                         
                         {{ .Content }}
                         
