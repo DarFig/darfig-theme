@@ -60,6 +60,7 @@ h1 {
     color: var(--purpura);
 }
 
+
 .card-header-title {
 
     color: var(--purpura);
@@ -79,6 +80,8 @@ h1 {
 .card-color {
     background-color: var(--negro);
     color: var(--blanco);
+    
+    
 }
 
 

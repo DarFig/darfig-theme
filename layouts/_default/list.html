@@ -7,16 +7,16 @@
         </div>
         <div class="column is-8">
             <div class="">
-                <div class=" column ">
-                    <h3 class="title is-4">Entradas</h3>
+                <div class=" column has-text-centered">
+                    <h3 class="title is-4 ">Entradas</h3>
                 </div>
             </div>
     
            
             {{ range (.Paginate .Site.RegularPages).Pages  }}
             <div class="column">
-                <div class="card grisClaro bordeVerde">
-                    <div class="start2p card-header">
+                <div class="card card-color">
+                    <div class="card-header">
                         <p class="card-header-title is-centered">
                         {{ .Title }}
                         </p>
@@ -24,7 +24,7 @@
                     <div class="card-content">
                     
                     
-                    <p class="content formatoTexto">{{ .Summary }}</p>
+                    <p class="content">{{ .Summary }}</p>
                     
                     
                     <a href="{{ .Permalink }}">Continuar</a>
@@ -36,7 +36,7 @@
             </div>
             {{ end }}
 
-            <div class="pagination negro start2p textoVerde bordeVerde"  role="navigation">
+            <div class="pagination "  role="navigation">
                 <div class="column is-4">
                 {{ if .Paginator.HasPrev }}
                     <a href="{{ .Paginator.Prev.URL }}" class="pagination-previous textoVerde bordeVerde">&#11013;</a>
