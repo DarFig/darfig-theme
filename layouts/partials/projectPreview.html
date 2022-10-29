@@ -1,16 +1,18 @@
 
-<div class="column tarjeta">
+<div class="column">
     
-    <div class="card grisClaro bordeVerde" >
+    <div class="card card-color" >
       
         {{ if .Params.image   }}
-        <div class="card-image">
-            <img src="/{{ .Params.image | absURL }}" class="imgP card-img-top text-center" alt="img">
+        <div class="card-imag">
+            
+            <img src="/{{ .Params.image | absURL }}" class="imagen-proyecto" alt="img">
+                
         </div>
         {{ end }}
         
         <div class="card-content">
-            <h5 class="start2p title is-5">{{ .Title }}</h5>
+            <h5 class="is-size-3">{{ .Title }}</h5>
             <div class="content formatoTexto">
                 <p>
                     {{ .Summary }}
