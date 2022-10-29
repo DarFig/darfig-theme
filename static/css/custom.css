@@ -66,9 +66,12 @@ nav a{
 
 .general{
     background-color: var(--negro);
+    color: var(--blanco);
 }
+
 .card-color{
-    background-color: var(--grisClaro);
+    background-color: var(--negro);
+    color: var(--blanco);
 }
 
 
