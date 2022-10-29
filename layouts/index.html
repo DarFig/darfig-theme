@@ -7,8 +7,8 @@
       
       <div class="column is-8 " >
           <div class=" ">
-          <div class=" column textoCentrado">
-              <h3 class="textoVerde start2p title is-3">Últimos Proyectos</h3>
+          <div class=" column ">
+              <h3 class="title is-3 has-text-centered">Últimos Proyectos</h3>
           </div>
           </div>
           <div class="column"></div>
@@ -21,15 +21,15 @@
             {{end}}
             
           </div>
-          <div class="centrar textoCentrado">
-            <a class="centrar" href="/projects/"><span class="textoCentrado start2p">...</span></a>
+          <div class="has-text-centered ">
+            <a class="" href="/projects/"><span class="">... más</span></a>
             <br>
           </div>
           
           <!-- Post prevw -->
-          <div class="negro bordeVerde">
-          <div class="column textoCentrado ">
-              <h3 class="textoVerde start2p title is-3 ">Últimas Entradas</h3>
+          <div class="negro">
+          <div class="column  ">
+              <h3 class="title is-3 has-text-centered">Últimas Entradas</h3>
             
           </div>
           
@@ -38,18 +38,21 @@
         {{ range  first 5 (where .Site.RegularPages "Section" "posts") }}
         {{ partial "postPreview.html" . }}
         {{end}}
-        <div class="centrar textoCentrado">
-          <a class="centrar" href="/posts/"><span class="textoCentrado start2p">...</span></a>
+        <div class="has-text-centered">
+          <a class="" href="/posts/"><span class="">... más</span></a>
           <br>
         </div>
+          <div class="column"></div>
+          <div class="columns">
+            {{ range  (where .Site.RegularPages "Type" "recommended") }}
+              {{ partial "recommended.html" . }}
+            {{end}}     
+    
+          </div>
+        
       </div>
       
-      <div class="column is-2 ">
-        {{ range  (where .Site.RegularPages "Type" "recommended") }}
-          {{ partial "recommended.html" . }}
-        {{end}}     
-
-      </div>
+      
       
     </div>
 
